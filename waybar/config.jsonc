@@ -9,11 +9,14 @@
     "modules-left": [
         "custom/arch",
         "hyprland/workspaces",
+        "wlr/taskbar",
         "hyprland/window"
     ],
     "modules-center": [
         "mpris"
+        
     ],
+
     "modules-right": [
         "pulseaudio",
         "pulseaudio#microphone",
@@ -29,7 +32,7 @@
     "custom/arch": {
         "format": "",
         "tooltip": false,
-        "on-click": "wleave"
+        "on-click": "rofi -show drun"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -135,5 +138,14 @@
       "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
       "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
       "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-"
+    },
+
+    "wlr/taskbar": {
+        "sort-by-app-id": false,
+        "icon-size": 18,
+        "spacing": 3,
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "tooltip": true
     }
 }

@@ -1,5 +1,5 @@
 * {
-    primary: #ebfdffff;
+    primary: #b16e25ff;
     primary-fixed: #9df0f8;
     primary-fixed-dim: #80d4dc;
     on-primary: #00363a;
@@ -10,7 +10,7 @@
     secondary: #b1cbce;
     secondary-fixed: #cce8ea;
     secondary-fixed-dim: #b1cbce;
-    on-secondary: #1b3437;
+    on-secondary: #ffffffff;
     on-secondary-fixed: #051f21;
     on-secondary-fixed-variant: #324b4d;
     secondary-container: #324b4d;
