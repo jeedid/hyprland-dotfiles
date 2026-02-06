@@ -1,27 +1,29 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+  font-size: 13px;
+  min-height: 0;
 }
 
 window#waybar {
-    background-color: rgba(35, 30, 26, 0);
-    border: 0px solid rgba(255, 255, 255, 0.332);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-radius: 6px;
+  background-color: rgba(35, 30, 26, 0);
+  border: 0px solid rgba(255, 255, 255, 0.332);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 6px;
 }
 
 #custom-arch {
-    margin-left: 20px;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 17px;
 }
 
 #window {
-  color: #fdfdfd;
-  text-shadow: 0px 0px 5px #121212;
+  color: #f8f8f8;
+  text-shadow: 0px 0px 5px #000000;
   margin-left: 10px;
 }
 
@@ -29,39 +31,48 @@ window#waybar {
 #tray,
 #bluetooth,
 #workspaces {
-    background-color: #38291c;
-    border-radius: 9999px;
-    margin-left: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 10px
+  background-color: #2b2b2b;
+  border-radius: 9999px;
+  margin-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 10px
 }
 
 #workspaces button {
-    color: #CDD6F4;
-    border-radius: 9999px;
-    transition: all 0.3s ease;
-    padding: 8;
-    padding-left: 10;
-    padding-top: 2px;
-    padding-bottom: 2px;
+  color: #6c6c6c;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  padding: 5;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 800;
 }
 
 #workspaces button.active {
-    background-color: #ef9f76;
-    color: #1E1E2E;
+  /*    background-color: #954a04; */
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ffffff;
 }
 
 #workspaces button:hover {
-    background-color: #585b70;
+  text-shadow: 0px 0px 5px #ffffff;
 }
 
+#workspaces button.urgent {
+  background-color: #b30906;
+}
+
+
 #mpris {
+  background-color: #2b2b2b;
+  color: #ffffff;
   min-height: 24px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 0;
   padding-bottom: 0;
+  text-shadow: 0px 0px 5px #ffffff;
 }
 
 #tray {
@@ -93,92 +104,88 @@ window#waybar {
 }*/
 
 #clock.time {
-    background-color: #f36e2c;
-    color: #000000;
-    border-radius: 9999px 0 0 9999px;
-    margin-left: 5px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding: 0 10px;
-    text-shadow: 0px 0px 5px #ffffff;
+  background-color: #5f195d;
+  color: #ffffff;
+  border-radius: 9999px 0 0 9999px;
+  margin-left: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0 10px;
 }
 
 #clock.date {
-    background-color: #b68cee;
-    color: #000000;
-    border-radius: 0 9999px 9999px 0;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding: 0 10px;
-    margin-right: 10px;
-    text-shadow: 0px 0px 5px #ffffff;
+  background-color: #954a04;
+  color: #ffffff;
+  border-radius: 0 9999px 9999px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0 10px;
+  margin-right: 10px;
 }
 
 #pulseaudio {
-  background-color: #38291c;
-  border-radius: 9999px;
+  background-color: #2b2b2b;
+  border-radius: 9999px 0 0 9999px;
   margin-left: 20px;
   margin-top: 8px;
   margin-bottom: 8px;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 5px;
 }
 
 #pulseaudio.microphone {
-  background-color: #38291c;
-  border-radius: 9999px;
-  margin-left: 5px;
+  background-color: #2b2b2b;
+  border-radius: 0 9999px 9999px 0;
+  margin-left: 0px;
   margin-right: 5px;
   margin-top: 8px;
   margin-bottom: 8px;
-  padding-left: 5px;
+  padding-left: 0px;
   padding-right: 12px;
 }
 
 #cpu {
-    background-color: #38291c;
-    border-radius: 9999px 0 0 9999px;
-    margin-left: 5px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+  background-color: #2b2b2b;
+  border-radius: 9999px 0 0 9999px;
+  margin-left: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #memory {
-    background-color: #38291c;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+  background-color: #2b2b2b;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #temperature {
-    background-color: #38291c;
-    border-radius: 0 9999px 9999px 0;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 5px;
-    padding-left: 8px;
-    padding-right: 12px;
+  background-color: #2b2b2b;
+  border-radius: 0 9999px 9999px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  padding-left: 8px;
+  padding-right: 10px;
 }
 
 #taskbar {
-  background-color: #38291c;
-  border-radius: 9999px;
+  background-color: transparent;
   margin-left: 0px;
   margin-top: 8px;
   margin-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-#taskbar button {
-  background-color: #38291c;
-  border-radius: 9999px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #taskbar button:hover {
-  background-color: #CDD6F4;
+  background-color: #2b2b2b;
   border-radius: 9999px;
 }
 
+#taskbar button.active {
+  background-color: transparent;
+}

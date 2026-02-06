@@ -14,21 +14,18 @@
     ],
     "modules-center": [
         "mpris"
-        
     ],
-
     "modules-right": [
         "pulseaudio",
         "pulseaudio#microphone",
         "tray",
-    //    "bluetooth",
+        //    "bluetooth",
         "cpu",
         "memory",
         "temperature",
         "clock#time",
         "clock#date"
     ],
-
     "custom/arch": {
         "format": "",
         "tooltip": false,
@@ -37,15 +34,14 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
-        "format-icons": {
-            "default": " ",
-            "active": " "
-        },
+        //    "format-icons": {
+        //        "default": " ",
+        //        "active": " "
+        //    },
         "persistent_workspaces": {
             "*": 9
         }
     },
-
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
@@ -59,7 +55,9 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": [""]
+        "format-icons": [
+            ""
+        ]
     },
     "mpris": {
         "format": "{player_icon} {title} - {artist}",
@@ -78,17 +76,14 @@
         "icon-size": 18,
         "spacing": 10
     },
-
     "clock#time": {
         "format": " {:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
-    
     "clock#date": {
         "format": " {:%a, %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
-
     "battery": {
         "states": {
             "warning": 30,
@@ -97,10 +92,14 @@
         "format": "<span size='150%'>{icon}</span> {capacity}%",
         "format-charging": "<span size='110%'></span> {capacity}%",
         "format-plugged": "<span size='110%'></span> {capacity}%",
-        "format-icons": [" ", " ", " ", " ", " "]
+        "format-icons": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ]
     },
-
-
     "bluetooth": {
         "format": "<span size='125%'></span>",
         "format-disabled": "",
@@ -108,44 +107,42 @@
         "on-click": "blueman-manager",
         "tooltip-format": "{device_enumerate}"
     },
-
-
     "pulseaudio": {
         "format": "<span size='120%'>{icon} </span> {volume}%",
         "format-bluetooth": "<span size='120%'>{icon}</span> {volume}%",
         "format-muted": "<span size='150%'>󰝟 </span>",
         "tooltip": false,
-
-//        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+        //        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
         "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-",
-
         "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": ["", "", ""]
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
         }
     },
-
     "pulseaudio#microphone": {
-      "format": "{format_source}",
-      "format-source": "<span color='#f38ba8'>  </span><span color='#cdd6f4'>{volume}%</span>",
-      "format-source-muted": "  ",
-      "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
-      "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
-      "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-"
+        "format": "{format_source}",
+        "format-source": "<span color='#f38ba8'>  </span><span color='#cdd6f4'>{volume}%</span>",
+        "format-source-muted": "  ",
+        "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 5%-"
     },
-
     "wlr/taskbar": {
+        "format": "{icon}",
         "sort-by-app-id": false,
-        "icon-size": 18,
+        "icon-size": 20,
         "spacing": 3,
         "on-click": "activate",
-        "on-click-middle": "close",
-        "tooltip": true
+        "on-click-middle": "close"
     }
 }

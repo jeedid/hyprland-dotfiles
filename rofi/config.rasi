@@ -21,11 +21,11 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border:			             2px solid;
-    border-color:		         #000000;
+    border:			             0px solid;
+    border-color:		         #b7936a;
     border-radius:               7px;
     cursor:                      "default";
-    background-color:            #22180e;
+    background-color:            #2f2f2fff;
 }
 
 mainbox {
@@ -64,7 +64,7 @@ inputbar {
     spacing:                     10px;
     padding:                     15px;
     border-radius:               10px;
-    background-color:		     #22180e;
+    background-color:		     #2b2b2b;
     text-color:			         @on-surface;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
